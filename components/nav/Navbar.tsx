@@ -1,7 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
-import { Button } from "../ui/button";
-import { FaGithub } from "react-icons/fa";
+import LoginForm from "./LoginForm";
 
 function Navbar() {
   return (
@@ -12,10 +13,7 @@ function Navbar() {
         </Link>
         <div className="h-1 w-0 group-hover:w-full transition-all bg-violet-500"></div>
       </div>
-      <Button variant="outline" className="flex items-center gap-2">
-        <FaGithub />
-        Login
-      </Button>
+      <LoginForm />
     </nav>
   );
 }
