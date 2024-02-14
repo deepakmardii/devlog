@@ -1,12 +1,9 @@
-import { Button } from "@/components/ui/button";
-import React from "react";
+// pages.tsx
 
-function page() {
-  return (
-    <div>
-      <Button>Hello World</Button>
-    </div>
-  );
-}
+import type { NextPage } from "next";
 
-export default page;
+const Home: NextPage = () => {
+  return <div>Hello World</div>;
+};
+
+export default Home;
